@@ -7,6 +7,7 @@ const { connectDB } = require('./src/config/database');
 
 // Importer les routes
 const authRoutes = require('./src/routes/authRoutes');
+const projectRoutes = require('./src/routes/projectRoutes');
 
 const app = express();
 
@@ -41,7 +42,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
-// app.use('/api/projects', projectRoutes); // À ajouter plus tard
+app.use('/api/projects', projectRoutes);
 // app.use('/api/tasks', taskRoutes); // À ajouter plus tard
 
 // Gestion des routes non trouvées
