@@ -1,0 +1,22 @@
+Les objectifs du projet
+
+#========================================================
+Etapes 1 :
+
+Plan de développement complet (adapté pour MySQL)
+Configuration du projet (package.json, .env)
+Configuration de la base de données (Sequelize avec MySQL)
+4 modèles Sequelize (User, Project, Task, ProjectMember)
+Associations entre modèles (relations many-to-many, one-to-many)
+Système d'authentification complet :
+
+Inscription
+Connexion avec JWT
+Middleware de protection des routes
+Gestion du profil
+
+
+Serveur Express configuré avec sécurité (helmet, CORS, rate limiting)
+#==============================================================
+Etape 2 :
+
